@@ -1,0 +1,9 @@
+.userBarContainer {
+    margin: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+  }
