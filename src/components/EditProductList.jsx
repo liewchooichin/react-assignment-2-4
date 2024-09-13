@@ -6,11 +6,10 @@ import { ProductReducer } from "./ProductReducer";
 import "./Lesson24App.css";
 
 
-  /*
-  Task 1: Use map to display all the product
-  Task 2: Use filter to filter the products of a certain max price, say $4.  You hard code the max price first.
-  Task 3: Use reduce method to sum up the total cost of all the product prices
-  */
+  /**
+   * Using Input field min and max to control for negative 
+   * numbers in price.
+   */
   EditProductList.propTypes = {
     products: PropTypes.arrayOf(PropTypes.shape({
       id: PropTypes.number.isRequired,
@@ -56,6 +55,9 @@ import "./Lesson24App.css";
                             value={p.price}
                             id="price"
                             name="price"
+                            min="1"
+                            max="100"
+                            required
                             onChange={(e) => handleProductPriceChange(e, p.id)}
                           ></input>
                         </form>

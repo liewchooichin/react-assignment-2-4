@@ -12,7 +12,8 @@ ProductSum.propTypes = {
 export function ProductSum({products}){
     /**Get sum of products */
     const total = products.reduce(
-        (accumulate, p) => {return(accumulate+p.price)}, 0);
+        (accumulate, p) => {return(accumulate+p.price)}, 
+        0);
 
     return(
     <>
